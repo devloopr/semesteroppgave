@@ -1,7 +1,9 @@
 :root {
-  --primary-color: rgba(24, 39, 51, 0.8);
-  --overlay-color: rgba(108, 207, 117, 0.99);
-  --moon-bg: rgba(14, 49, 141, 0.7);
+  --yellow: rgba(255, 241, 0, 0.6);
+  --purple: rgba(95, 38, 116, 1);
+  --orange: rgba(250, 96, 0, 0.6);
+  --lightblue: rgba(0, 144, 209, 1);
+  --blue: rgba(3, 103, 166, 1);
 }
 
 * {
@@ -13,7 +15,6 @@
 body {
   width: 100%;
   min-height: 100%;
-  color: #ffffff;
   text-align: center;
 }
 
@@ -26,7 +27,7 @@ body {
     width: 90%;
     grid-template-columns: repeat(12, 1fr);
     grid-auto-rows: minmax(60px, auto);
-    grid-gap: 5px;
+    grid-gap: 10px;
     grid-template-areas:
       "nav nav nav nav nav nav nav nav nav nav nav nav"
       "aside aside aside aside header header header header header header header header"
@@ -39,6 +40,8 @@ body {
       "main main main main main main main main aside_2 aside_2 aside_2 aside_2"
       "main main main main main main main main aside_2 aside_2 aside_2 aside_2"
       "main main main main main main main main aside_2 aside_2 aside_2 aside_2"
+      "section section section section section section section section section section section section"
+      "section section section section section section section section section section section section"
       "section section section section section section section section section section section section"
       "section section section section section section section section section section section section"
       "section section section section section section section section section section section section"
@@ -74,14 +77,21 @@ body {
       "aside aside aside aside header header header header header header header header"
       "aside aside aside aside header header header header header header header header"
       "aside aside aside aside header header header header header header header header"
+      ". . . . . . . . . . . ."
       "main main main main main main main main aside_2 aside_2 aside_2 aside_2"
       "main main main main main main main main aside_2 aside_2 aside_2 aside_2"
       "main main main main main main main main aside_2 aside_2 aside_2 aside_2"
       "main main main main main main main main aside_2 aside_2 aside_2 aside_2"
+      "main main main main main main main main aside_2 aside_2 aside_2 aside_2"
+      "main main main main main main main main aside_2 aside_2 aside_2 aside_2"
+      ". . . . . . . . . . . ."
       "section section section section section section section section section section section section"
       "section section section section section section section section section section section section"
       "section section section section section section section section section section section section"
       "section section section section section section section section section section section section"
+      "section section section section section section section section section section section section"
+      "section section section section section section section section section section section section"
+      ". . . . . . . . . . . ."
       "photo_1 photo_1 photo_2 photo_2 photo_2 photo_3 photo_3 photo_3 photo_7 photo_7 photo_7 photo_7"
       "photo_1 photo_1 photo_2 photo_2 photo_2 photo_3 photo_3 photo_3 photo_7 photo_7 photo_7 photo_7"
       "photo_1 photo_1 photo_2 photo_2 photo_2 photo_3 photo_3 photo_3 photo_7 photo_7 photo_7 photo_7"
@@ -92,11 +102,16 @@ body {
       "photo_8 photo_8 photo_8 photo_8 photo_12 photo_12 photo_12 photo_10 photo_10 photo_10 photo_10 photo_10"
       "photo_11 photo_11 photo_11 photo_11 photo_12 photo_12 photo_12 photo_13 photo_13 photo_13 photo_13 photo_13"
       "photo_11 photo_11 photo_11 photo_11 photo_12 photo_12 photo_12 photo_13 photo_13 photo_13 photo_13 photo_13"
+      ". . . . . . . . . . . ."
+      "footer footer footer footer footer footer footer footer footer footer footer footer"
+      "footer footer footer footer footer footer footer footer footer footer footer footer"
+      "footer footer footer footer footer footer footer footer footer footer footer footer"
+      "footer footer footer footer footer footer footer footer footer footer footer footer"
       "footer footer footer footer footer footer footer footer footer footer footer footer";
   }
 }
 
-@media screen and (min-width: 1550px) {
+/* @media screen and (min-width: 1550px) {
   .content {
     display: grid;
     margin: 0 auto;
@@ -121,6 +136,8 @@ body {
       "section section section section section section section section section section section section"
       "section section section section section section section section section section section section"
       "section section section section section section section section section section section section"
+      "section section section section section section section section section section section section"
+      "section section section section section section section section section section section section"
       "photo_1 photo_1 photo_2 photo_2 photo_2 photo_3 photo_3 photo_3 photo_7 photo_7 photo_7 photo_7"
       "photo_1 photo_1 photo_2 photo_2 photo_2 photo_3 photo_3 photo_3 photo_7 photo_7 photo_7 photo_7"
       "photo_1 photo_1 photo_2 photo_2 photo_2 photo_3 photo_3 photo_3 photo_7 photo_7 photo_7 photo_7"
@@ -133,11 +150,7 @@ body {
       "photo_11 photo_11 photo_11 photo_11 photo_12 photo_12 photo_12 photo_13 photo_13 photo_13 photo_13 photo_13"
       "footer footer footer footer footer footer footer footer footer footer footer footer";
   }
-}
-
-.content > * {
-  border: 1px solid black;
-}
+} */
 
 /* NAVIGATION */
 
@@ -186,32 +199,92 @@ header > .image {
 
 aside {
   grid-area: aside;
+  background-color: aquamarine;
 }
 
 /* MAIN */
 
 main {
   grid-area: main;
+  background-color: var(--orange);
+}
+
+.main_content {
+  height: 100%;
+  max-width: 600px;
 }
 
 /* ASIDE_2 */
 
 .aside_2 {
   grid-area: aside_2;
+  background-color: var(--yellow);
 }
 
 /* SECTION */
 
 section {
   grid-area: section;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-auto-rows: minmax(60px, auto);
+  grid-gap: 10px;
+  grid-template-areas:
+    "ex_h2 card_1 card_1 card_1 card_2 card_2 card_2 card_3 card_3 card_3"
+    "ex_h2 card_1 card_1 card_1 card_2 card_2 card_2 card_3 card_3 card_3"
+    "ex_h2 card_1 card_1 card_1 card_2 card_2 card_2 card_3 card_3 card_3"
+    "ex_h2 card_1 card_1 card_1 card_2 card_2 card_2 card_3 card_3 card_3"
+    "ex_h2 card_1 card_1 card_1 card_2 card_2 card_2 card_3 card_3 card_3"
+    "ex_h2 card_1 card_1 card_1 card_2 card_2 card_2 card_3 card_3 card_3";
 }
 
-/* FIGURE */
+.ex_h2 {
+  grid-area: ex_h2;
+  background-color: aqua;
+}
+
+.card_1 .card_2 .card_3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.card_1 {
+  grid-area: card_1;
+  background-color: beige;
+}
+
+.card_1 img {
+  border-radius: 50%;
+  margin: 30px auto 10px auto;
+}
+
+.card_2 {
+  grid-area: card_2;
+  background-color: beige;
+}
+
+.card_2 img {
+  border-radius: 50%;
+  margin: 30px auto 10px auto;
+}
+
+.card_3 {
+  grid-area: card_3;
+  background-color: beige;
+}
+
+.card_3 img {
+  border-radius: 50%;
+  margin: 30px auto 10px auto;
+}
+
+/* IMG GALLERY */
 
 .photo_1 {
   grid-area: photo_1;
+  border: 3px solid var(--yellow);
 }
-.photo_1 > img {
+.photo_1 img {
   height: 100%;
   width: 100%;
   display: block;
@@ -219,8 +292,9 @@ section {
 
 .photo_2 {
   grid-area: photo_2;
+  border: 3px solid var(--purple);
 }
-.photo_2 > img {
+.photo_2 img {
   height: 100%;
   width: 100%;
   display: block;
@@ -232,8 +306,9 @@ section {
 
 .photo_3 {
   grid-area: photo_3;
+  border: 3px solid var(--lightblue);
 }
-.photo_3 > img {
+.photo_3 img {
   height: 100%;
   width: 100%;
   display: block;
@@ -241,8 +316,9 @@ section {
 
 .photo_4 {
   grid-area: photo_4;
+  border: 3px solid var(--orange);
 }
-.photo_4 > img {
+.photo_4 img {
   height: 100%;
   width: 100%;
   display: block;
@@ -250,8 +326,9 @@ section {
 
 .photo_5 {
   grid-area: photo_5;
+  border: 3px solid var(--blue);
 }
-.photo_5 > img {
+.photo_5 img {
   height: 100%;
   width: 100%;
   display: block;
@@ -259,8 +336,9 @@ section {
 
 .photo_6 {
   grid-area: photo_6;
+  border: none;
 }
-.photo_6 > img {
+.photo_6 img {
   height: 100%;
   width: 100%;
   display: block;
@@ -268,8 +346,9 @@ section {
 
 .photo_7 {
   grid-area: photo_7;
+  border: 3px solid var(--yellow);
 }
-.photo_7 > img {
+.photo_7 img {
   height: 100%;
   width: 100%;
   display: block;
@@ -277,8 +356,9 @@ section {
 
 .photo_8 {
   grid-area: photo_8;
+  border: 3px solid var(--orange);
 }
-.photo_8 > img {
+.photo_8 img {
   height: 100%;
   width: 100%;
   display: block;
@@ -286,8 +366,9 @@ section {
 
 .photo_9 {
   grid-area: photo_9;
+  border: 3px solid var(--yellow);
 }
-.photo_9 > img {
+.photo_9 img {
   height: 100%;
   width: 100%;
   display: block;
@@ -295,8 +376,9 @@ section {
 
 .photo_10 {
   grid-area: photo_10;
+  border: 3px solid var(--orange);
 }
-.photo_10 > img {
+.photo_10 img {
   height: 100%;
   width: 100%;
   display: block;
@@ -304,8 +386,9 @@ section {
 
 .photo_11 {
   grid-area: photo_11;
+  border: 3px solid var(--purple);
 }
-.photo_11 > img {
+.photo_11 img {
   height: 100%;
   width: 100%;
   display: block;
@@ -313,8 +396,9 @@ section {
 
 .photo_12 {
   grid-area: photo_12;
+  border: 3px solid var(--blue);
 }
-.photo_12 > img {
+.photo_12 img {
   height: 100%;
   width: 100%;
   display: block;
@@ -322,8 +406,9 @@ section {
 
 .photo_13 {
   grid-area: photo_13;
+  border: 3px solid var(--lightblue);
 }
-.photo_13 > img {
+.photo_13 img {
   height: 100%;
   width: 100%;
   display: block;
@@ -333,4 +418,5 @@ section {
 
 footer {
   grid-area: footer;
+  background-color: darkslategray;
 }
