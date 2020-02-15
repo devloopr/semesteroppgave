@@ -1,9 +1,11 @@
 :root {
-  --yellow: rgba(255, 241, 0, 0.6);
-  --purple: rgba(95, 38, 116, 1);
-  --orange: rgba(250, 96, 0, 0.6);
-  --lightblue: rgba(0, 144, 209, 1);
+  --yellow: #ffe175;
+  --purple: #9b78b1;
+  --purple-complimentary: #a7b078;
+  --peach: #fca79f;
+  --lightblue: rgba(0, 254, 254, 0.3);
   --blue: rgba(3, 103, 166, 1);
+  --darkgrey: rgba(38, 69, 69, 0.9);
 }
 
 * {
@@ -16,6 +18,8 @@ body {
   width: 100%;
   min-height: 100%;
   text-align: center;
+  font-family: "Playfair Display", serif;
+  background: #c99d91;
 }
 
 /* LAYOUT @media */
@@ -24,22 +28,22 @@ body {
   .content {
     display: grid;
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
     grid-template-columns: repeat(12, 1fr);
     grid-auto-rows: minmax(60px, auto);
-    grid-gap: 10px;
+    grid-gap: 15px;
     grid-template-areas:
-      "nav nav nav nav nav nav nav nav nav nav nav nav"
-      "aside aside aside aside header header header header header header header header"
-      "aside aside aside aside header header header header header header header header"
-      "aside aside aside aside header header header header header header header header"
-      "aside aside aside aside header header header header header header header header"
-      "aside aside aside aside header header header header header header header header"
-      "aside aside aside aside header header header header header header header header"
-      "main main main main main main main main aside_2 aside_2 aside_2 aside_2"
-      "main main main main main main main main aside_2 aside_2 aside_2 aside_2"
-      "main main main main main main main main aside_2 aside_2 aside_2 aside_2"
-      "main main main main main main main main aside_2 aside_2 aside_2 aside_2"
+      ". . . . . . . . . . . ."
+      "header header header header header header header header header header header header"
+      "header header header header header header header header header header header header"
+      "header header header header header header header header header header header header"
+      "header header header header header header header header header header header header"
+      "header header header header header header header header header header header header"
+      "header header header header header header header header header header header header"
+      "main main main main main main main main main main main main"
+      "main main main main main main main main main main main main"
+      "main main main main main main main main main main main main"
+      "main main main main main main main main main main main main"
       "section section section section section section section section section section section section"
       "section section section section section section section section section section section section"
       "section section section section section section section section section section section section"
@@ -64,34 +68,30 @@ body {
   .content {
     display: grid;
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
     grid-template-columns: repeat(12, 1fr);
     grid-auto-rows: minmax(60px, auto);
-    grid-gap: 10px;
+    grid-gap: 15px;
     grid-template-areas:
-      "nav nav nav nav nav nav nav nav nav nav nav nav"
-      "aside aside aside aside header header header header header header header header"
-      "aside aside aside aside header header header header header header header header"
-      "aside aside aside aside header header header header header header header header"
-      "aside aside aside aside header header header header header header header header"
-      "aside aside aside aside header header header header header header header header"
-      "aside aside aside aside header header header header header header header header"
-      "aside aside aside aside header header header header header header header header"
       ". . . . . . . . . . . ."
-      "main main main main main main main main aside_2 aside_2 aside_2 aside_2"
-      "main main main main main main main main aside_2 aside_2 aside_2 aside_2"
-      "main main main main main main main main aside_2 aside_2 aside_2 aside_2"
-      "main main main main main main main main aside_2 aside_2 aside_2 aside_2"
-      "main main main main main main main main aside_2 aside_2 aside_2 aside_2"
-      "main main main main main main main main aside_2 aside_2 aside_2 aside_2"
-      ". . . . . . . . . . . ."
+      "header header header header header header header header header header header header"
+      "header header header header header header header header header header header header"
+      "header header header header header header header header header header header header"
+      "header header header header header header header header header header header header"
+      "header header header header header header header header header header header header"
+      "header header header header header header header header header header header header"
+      "header header header header header header header header header header header header"
+      "header header header header header header header header header header header header"
+      "main main main main main main main main main main main main"
+      "main main main main main main main main main main main main"
+      "main main main main main main main main main main main main"
+      "main main main main main main main main main main main main"
       "section section section section section section section section section section section section"
       "section section section section section section section section section section section section"
       "section section section section section section section section section section section section"
       "section section section section section section section section section section section section"
       "section section section section section section section section section section section section"
       "section section section section section section section section section section section section"
-      ". . . . . . . . . . . ."
       "photo_1 photo_1 photo_2 photo_2 photo_2 photo_3 photo_3 photo_3 photo_7 photo_7 photo_7 photo_7"
       "photo_1 photo_1 photo_2 photo_2 photo_2 photo_3 photo_3 photo_3 photo_7 photo_7 photo_7 photo_7"
       "photo_1 photo_1 photo_2 photo_2 photo_2 photo_3 photo_3 photo_3 photo_7 photo_7 photo_7 photo_7"
@@ -102,36 +102,30 @@ body {
       "photo_8 photo_8 photo_8 photo_8 photo_12 photo_12 photo_12 photo_10 photo_10 photo_10 photo_10 photo_10"
       "photo_11 photo_11 photo_11 photo_11 photo_12 photo_12 photo_12 photo_13 photo_13 photo_13 photo_13 photo_13"
       "photo_11 photo_11 photo_11 photo_11 photo_12 photo_12 photo_12 photo_13 photo_13 photo_13 photo_13 photo_13"
-      ". . . . . . . . . . . ."
-      "footer footer footer footer footer footer footer footer footer footer footer footer"
-      "footer footer footer footer footer footer footer footer footer footer footer footer"
-      "footer footer footer footer footer footer footer footer footer footer footer footer"
-      "footer footer footer footer footer footer footer footer footer footer footer footer"
       "footer footer footer footer footer footer footer footer footer footer footer footer";
   }
 }
 
-/* @media screen and (min-width: 1550px) {
+@media screen and (min-width: 1550px) {
   .content {
     display: grid;
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
     grid-template-columns: repeat(12, 1fr);
     grid-auto-rows: minmax(60px, auto);
-    grid-gap: 10px;
+    grid-gap: 15px;
     grid-template-areas:
-      "nav nav nav nav nav nav nav nav nav nav nav nav"
-      "aside aside aside aside header header header header header header header header"
-      "aside aside aside aside header header header header header header header header"
-      "aside aside aside aside header header header header header header header header"
-      "aside aside aside aside header header header header header header header header"
-      "aside aside aside aside header header header header header header header header"
-      "aside aside aside aside header header header header header header header header"
-      "aside aside aside aside header header header header header header header header"
-      "main main main main main main main main aside_2 aside_2 aside_2 aside_2"
-      "main main main main main main main main aside_2 aside_2 aside_2 aside_2"
-      "main main main main main main main main aside_2 aside_2 aside_2 aside_2"
-      "main main main main main main main main aside_2 aside_2 aside_2 aside_2"
+      ". . . . . . . . . . . ."
+      "header header header header header header header header header header header header"
+      "header header header header header header header header header header header header"
+      "header header header header header header header header header header header header"
+      "header header header header header header header header header header header header"
+      "header header header header header header header header header header header header"
+      "header header header header header header header header header header header header"
+      "header header header header header header header header header header header header"
+      "header header header header header header header header header header header header"
+      "header header header header header header header header header header header header"
+      "main main main main main main main main main main main main"
       "section section section section section section section section section section section section"
       "section section section section section section section section section section section section"
       "section section section section section section section section section section section section"
@@ -150,32 +144,55 @@ body {
       "photo_11 photo_11 photo_11 photo_11 photo_12 photo_12 photo_12 photo_13 photo_13 photo_13 photo_13 photo_13"
       "footer footer footer footer footer footer footer footer footer footer footer footer";
   }
-} */
-
-/* NAVIGATION */
-
-nav {
-  grid-area: nav;
 }
 
-.nav_container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  justify-items: center;
+/* HEADER */
+
+header {
+  grid-area: header;
+  background: var(--yellow);
+}
+
+.text_wrapper h1 {
+  color: black;
+  font-size: 16vw;
   width: 100%;
   height: 100%;
-  align-items: center;
+  text-transform: uppercase;
+  margin-top: 100px;
 }
 
-.nav_container > a {
+.text_wrapper h2 {
+  color: black;
+  font-size: 2vw;
+  width: 100%;
+  height: 100%;
+  font-family: "Cormorant Garamond", serif;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+/* NAV */
+
+.nav-wrapper {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  background: #fff;
+  justify-content: space-around;
+  align-self: center;
+  align-items: center;
+  position: fixed;
+}
+
+nav a {
+  font-family: "Advent Pro", sans-serif;
+  transition: all 0.2s ease-in-out;
   text-decoration: none;
   text-transform: uppercase;
-  transition: transform 0.3s;
-  text-shadow: 3px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
-.nav_container > a:hover {
+.nav-wrapper > a:hover {
   transform: scale(1.3);
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
 }
@@ -186,229 +203,221 @@ header {
   grid-area: header;
 }
 
-header > .image {
-  background-image: url(/img/andrew-ruiz-348421.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-  height: 100%;
-}
-
 /* ASIDE */
-
-aside {
-  grid-area: aside;
-  background-color: aquamarine;
-}
 
 /* MAIN */
 
 main {
   grid-area: main;
-  background-color: var(--orange);
+  background: var(--purple);
+  display: grid;
+  margin: 0 auto;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 3fr 1fr;
+  grid-auto-rows: minmax(60px, auto);
+  grid-gap: 10px;
+
+  grid-template-areas:
+    ". . . ."
+    "img-1 img-1 text aside"
+    "img-1 img-1 text aside"
+    "img-1 img-1 text aside"
+    "img-2 img-2 text aside"
+    "img-2 img-2 text aside"
+    "img-3 img-3 text aside"
+    "img-3 img-3 text aside"
+    "img-3 img-3 text aside"
+    ". . . .";
 }
 
-.main_content {
-  height: 100%;
-  max-width: 600px;
+.img1-wrapper {
+  grid-area: img-1;
+  border: 15px var(--peach) solid;
 }
+.img2-wrapper {
+  grid-area: img-2;
+  border: 15px var(--peach) solid;
+}
+.img3-wrapper {
+  grid-area: img-3;
+  border: 15px var(--peach) solid;
+}
+
+.main-text-wrapper {
+  grid-area: text;
+  border: 15px var(--peach) solid;
+}
+
+.main-aside-wrapper {
+  grid-area: aside;
+  border: 15px var(--peach) solid;
+}
+/* .main_content p {
+  height: 100%;
+  max-width: 800px;
+  text-align: left;
+  margin: -10px auto 20px auto;
+  color: #176561;
+  font-size: 12pt;
+}
+
+.main_content p::before {
+  content: "\A";
+  white-space: pre;
+} */
 
 /* ASIDE_2 */
-
-.aside_2 {
-  grid-area: aside_2;
-  background-color: var(--yellow);
-}
 
 /* SECTION */
 
 section {
   grid-area: section;
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
+  grid-template-columns: 1fr 1fr 1fr;
   grid-auto-rows: minmax(60px, auto);
-  grid-gap: 10px;
+  grid-gap: 20px;
   grid-template-areas:
-    "ex_h2 card_1 card_1 card_1 card_2 card_2 card_2 card_3 card_3 card_3"
-    "ex_h2 card_1 card_1 card_1 card_2 card_2 card_2 card_3 card_3 card_3"
-    "ex_h2 card_1 card_1 card_1 card_2 card_2 card_2 card_3 card_3 card_3"
-    "ex_h2 card_1 card_1 card_1 card_2 card_2 card_2 card_3 card_3 card_3"
-    "ex_h2 card_1 card_1 card_1 card_2 card_2 card_2 card_3 card_3 card_3"
-    "ex_h2 card_1 card_1 card_1 card_2 card_2 card_2 card_3 card_3 card_3";
-}
+    "card-1 card-2 card-3"
+    "card-1 card-2 card-3"
+    "card-1 card-2 card-3"
+    "card-1 card-2 card-3"
+    "card-1 card-2 card-3"
+    "card-1 card-2 card-3";
 
-.ex_h2 {
-  grid-area: ex_h2;
-  background-color: aqua;
-}
-
-.card_1 .card_2 .card_3 {
-  display: flex;
-  flex-direction: column;
-}
-
-.card_1 {
-  grid-area: card_1;
-  background-color: beige;
-}
-
-.card_1 img {
-  border-radius: 50%;
-  margin: 30px auto 10px auto;
-}
-
-.card_2 {
-  grid-area: card_2;
-  background-color: beige;
-}
-
-.card_2 img {
-  border-radius: 50%;
-  margin: 30px auto 10px auto;
-}
-
-.card_3 {
-  grid-area: card_3;
-  background-color: beige;
-}
-
-.card_3 img {
-  border-radius: 50%;
-  margin: 30px auto 10px auto;
+  background: var(--purple-complimentary);
 }
 
 /* IMG GALLERY */
 
-.photo_1 {
+.photo-1 {
   grid-area: photo_1;
-  border: 3px solid var(--yellow);
+  border: 15px solid var(--yellow);
 }
-.photo_1 img {
+.photo-1 img {
   height: 100%;
   width: 100%;
   display: block;
 }
 
-.photo_2 {
+.photo-2 {
   grid-area: photo_2;
-  border: 3px solid var(--purple);
+  border: 15px solid var(--yellow);
 }
-.photo_2 img {
+.photo-2 img {
   height: 100%;
   width: 100%;
   display: block;
+  transition: all 0.5s ease-in-out;
 }
-.photo_2 > img:hover {
-  transform: scale(1.1);
-  transition: all 0.3s ease-in-out;
+.photo-2 img:hover {
+  transform: scale(1.06);
 }
 
-.photo_3 {
+.photo-3 {
   grid-area: photo_3;
-  border: 3px solid var(--lightblue);
+  border: 15px solid var(--yellow);
 }
-.photo_3 img {
+.photo-3 img {
   height: 100%;
   width: 100%;
   display: block;
 }
 
-.photo_4 {
+.photo-4 {
   grid-area: photo_4;
-  border: 3px solid var(--orange);
+  border: 15px solid var(--yellow);
 }
-.photo_4 img {
+.photo-4 img {
   height: 100%;
   width: 100%;
   display: block;
 }
 
-.photo_5 {
+.photo-5 {
   grid-area: photo_5;
-  border: 3px solid var(--blue);
+  border: 15px solid var(--yellow);
 }
-.photo_5 img {
+.photo-5 img {
   height: 100%;
   width: 100%;
   display: block;
 }
 
-.photo_6 {
+.photo-6 {
   grid-area: photo_6;
-  border: none;
+  border: 15px solid var(--yellow);
 }
-.photo_6 img {
+.photo-6 img {
   height: 100%;
   width: 100%;
   display: block;
 }
 
-.photo_7 {
+.photo-7 {
   grid-area: photo_7;
-  border: 3px solid var(--yellow);
+  border: 15px solid var(--yellow);
 }
-.photo_7 img {
+.photo-7 img {
   height: 100%;
   width: 100%;
   display: block;
 }
 
-.photo_8 {
+.photo-8 {
   grid-area: photo_8;
-  border: 3px solid var(--orange);
+  border: 15px solid var(--yellow);
 }
-.photo_8 img {
+.photo-8 img {
   height: 100%;
   width: 100%;
   display: block;
 }
 
-.photo_9 {
+.photo-9 {
   grid-area: photo_9;
-  border: 3px solid var(--yellow);
+  border: 15px solid var(--yellow);
 }
-.photo_9 img {
+.photo-9 img {
   height: 100%;
   width: 100%;
   display: block;
 }
 
-.photo_10 {
+.photo-10 {
   grid-area: photo_10;
-  border: 3px solid var(--orange);
+  border: 15px solid var(--yellow);
 }
-.photo_10 img {
+.photo-10 img {
   height: 100%;
   width: 100%;
   display: block;
 }
 
-.photo_11 {
+.photo-11 {
   grid-area: photo_11;
-  border: 3px solid var(--purple);
+  border: 15px solid var(--yellow);
 }
-.photo_11 img {
+.photo-11 img {
   height: 100%;
   width: 100%;
   display: block;
 }
 
-.photo_12 {
+.photo-12 {
   grid-area: photo_12;
-  border: 3px solid var(--blue);
+  border: 15px solid var(--yellow);
 }
-.photo_12 img {
+.photo-12 img {
   height: 100%;
   width: 100%;
   display: block;
 }
 
-.photo_13 {
+.photo-13 {
   grid-area: photo_13;
-  border: 3px solid var(--lightblue);
+  border: 15px solid var(--yellow);
 }
-.photo_13 img {
+.photo-13 img {
   height: 100%;
   width: 100%;
   display: block;
