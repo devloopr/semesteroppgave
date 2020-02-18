@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css?family=Advent+Pro|Cormorant+Garamond|Playfair+Display&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="index_styles.css" style type="text/css" />
+    <link rel="stylesheet" href="css/index_styles.css" style type="text/css" />
 
     <script
       src="https://kit.fontawesome.com/c011f1c29c.js"
@@ -24,66 +24,70 @@
       <div class="nav-wrapper">
         <a href="">home</a>
         <a href="">visit</a>
-        <a href="">explore</a>
+        <a href="explore.html">explore</a>
         <a href="">exhibitions</a>
         <a href="">events</a>
         <a href="">get involved</a>
+      
+      <form id="search-form">
+        <input type="text" placeholder="Search">
+        <button class="search-btn">Search</button>
+      </form>
       </div>
     </nav>
 
-    <div class="content">
-      <header>
-        <div class="text_wrapper">
-          <h1>Welcome</h1>
-          <h2>
-            To the official opening of <strong>Oslo science museum</strong> the
-            29th of February 2020.
-          </h2>
-        </div>
-      </header>
+    <!-- HEADER  -->
+    <header id="header" class="grid">
+      <div class="bg-img"></div>
+      <div class="content-wrap">
+        <h1>Welcome</h1>
+        <h2>
+          To the official opening of <strong>Oslo science museum</strong> the
+          29th of February 2020.
+        </h2>
+        <a href="#article-section" class="btn">Read More</a>
+      </div>
+    </header>
 
-      <!-- <aside>
-        <h3>Opening hours:</h3>
+    <!-- MAIN -->
+    <main id="main">
+      <section id="exhibition-section" class="grid">
         <ul>
-          <li>Monday: Closed</li>
-          <li>Tuesday: 10:00 – 16:00</li>
-          <li>Wednesday: 10:00 – 16:00</li>
-          <li>Thursday: 10:00 – 16:00</li>
-          <li>Friday: 10:00 – 19:00</li>
-          <li>Saturday: 9:00 – 16:00</li>
-          <li>sunday: 9:00 - 13:00</li>
+          <li>
+            <div class="cards">
+              <img src="/img/photo_5.jpg" alt="" />
+              <div class="card-content">
+                <h3 class="card-title">Lorem, ipsum.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="cards">
+              <img src="/img/photo_5.jpg" alt="" />
+              <div class="card-content">
+                <h3 class="card-title">Lorem, ipsum.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="cards">
+              <img src="/img/photo_5.jpg" alt="" />
+              <div class="card-content">
+                <h3 class="card-title">Lorem, ipsum.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+              </div>
+            </div>
+          </li>
         </ul>
-      </aside> -->
+      </section>
 
-      <main>
-        <div class="img1-wrapper">
-          <img src="" alt="" width="" height="" />
-        </div>
-
-        <div class="img2-wrapper">
-          <img src="" alt="" width="" height="" />
-        </div>
-
-        <div class="img3-wrapper">
-          <img src="" alt="" width="" height="" />
-        </div>
-
-        <div class="main-text-wrapper"></div>
-
-        <div class="main-aside-wrapper">
-          <aside></aside>
-        </div>
-
-        <!-- <div class="main_content">
-          <h1>
-            <span class="first_letter">W</span>elcome
-            <span class="first_letter">T</span>o
-            <span class="first_letter">O</span>slo
-            <span class="first_letter">C</span>ommunity
-            <span class="first_letter">S</span>cience
-            <span class="first_letter">M</span>useum
-          </h1>
-
+    
+      <article id="article-section" class="grid">
+        <div class="content-wrap">
+          <h2 class="content-title">Lorem, ipsum.</h2>
+          <div class="text-wrap">
           <p>
             Come join us at the Community Science Museum where we’re committed
             to making science accessible to all.
@@ -107,31 +111,54 @@
             with and play around to see science come to life (apart from the
             dinosaur exhibits – they only come to life at night when everyone’s
             gone home).
+            </div>
           </p>
-        </div> -->
-      </main>
-
-      <section>
-        <div class="card-1"></div>
-        <div class="card-2"></div>
-        <div class="card-3"></div>
+        </div>
+      </article>
+        <section id="event-section" class="grid">
+        <div class="content-wrap">
+          <h2 class="content-title">Upcoming events</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae,
+            culpa!
+          </p>
+        </div>
+      </section>
+      <section id="info-section" class="grid">
+        <div class="content-wrap">
+          <h2 class="content-title">opening hours</h2>
+          <ul>
+            <li>Monday: Closed</li>
+            <li>Tuesday: 10:00 – 16:00</li>
+            <li>Wednesday: 10:00 – 16:00</li>
+            <li>Thursday: 10:00 – 16:00</li>
+            <li>Friday: 10:00 – 19:00</li>
+            <li>Saturday: 9:00 – 16:00</li>
+            <li>sunday: 9:00 - 13:00</li>
+          </ul>
+        </div>
       </section>
 
-      <div class="photo-1"><img src="img/photo_1.jpg" alt="" /></div>
-      <div class="photo-2"><img src="img/photo_2.jpg" alt="" /></div>
-      <div class="photo-3"><img src="img/photo_3.jpg" alt="" /></div>
-      <div class="photo-5"><img src="img/photo_5.jpg" alt="" /></div>
-      <div class="photo-6"><img src="img/photo_6.jpg" alt="" /></div>
-      <div class="photo-7"><img src="img/photo_7.jpg" alt="" /></div>
-      <div class="photo-8"><img src="img/photo_8.jpg" alt="" /></div>
-      <div class="photo-9"><img src="img/photo_9.jpg" alt="" /></div>
-      <div class="photo-10"><img src="img/photo_10.jpg" alt="" /></div>
-      <div class="photo-11"><img src="img/542.jpg" alt="" /></div>
-      <div class="photo-12"><img src="img/photo_12.jpg" alt="" /></div>
-      <div class="photo-13"><img src="img/photo_13.jpg" alt="" /></div>
+      
+       <section id="mosaic-gallery">
+        <div class="photo-1"><img src="img/photo_1.jpg" alt="" /></div>
+        <div class="photo-2"><img src="img/photo_2.jpg" alt="" /></div>
+        <div class="photo-3"><img src="img/photo_3.jpg" alt="" /></div>
+        <div class="photo-5"><img src="img/photo_5.jpg" alt="" /></div>
+        <div class="photo-6"><img src="img/photo_6.jpg" alt="" /></div>
+        <div class="photo-7"><img src="img/photo_7.jpg" alt="" /></div>
+        <div class="photo-8"><img src="img/photo_8.jpg" alt="" /></div>
+        <div class="photo-9"><img src="img/photo_9.jpg" alt="" /></div>
+        <div class="photo-10"><img src="img/photo_10.jpg" alt="" /></div>
+        <div class="photo-11"><img src="img/542.jpg" alt="" /></div>
+        <div class="photo-12"><img src="img/photo_12.jpg" alt="" /></div>
+        <div class="photo-13"><img src="img/photo_13.jpg" alt="" /></div>
+      </section>
+    </main>
 
-      <footer>footer</footer>
-    </div>
+
+
+    <footer>footer</footer>
 
     <footer>
       <div class="social_container">
