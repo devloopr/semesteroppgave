@@ -10,8 +10,15 @@
       href="https://fonts.googleapis.com/css?family=Advent+Pro|Cormorant+Garamond|Playfair+Display&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/index_styles.css" style type="text/css" />
 
+    <link rel="stylesheet" href="css/global-styles.css" style type="text/css" />
+    <link rel="stylesheet" href="css/index-styles.css" style type="text/css" />
+    <link
+      rel="stylesheet"
+      href="css/exhibition-styles.css"
+      style
+      type="text/css"
+    />
     <script
       src="https://kit.fontawesome.com/c011f1c29c.js"
       crossorigin="anonymous"
@@ -20,127 +27,224 @@
   </head>
 
   <body>
+    <label id="label-hamburger" for="hamburger-menu">
+      <i class="fas fa-bars"> </i>
+    </label>
+    <input type="checkbox" id="hamburger-menu" />
     <nav>
       <div class="nav-wrapper">
-        <a href="">home</a>
+        <a href="index.html">home</a>
         <a href="">visit</a>
         <a href="explore.html">explore</a>
-        <a href="">exhibitions</a>
-        <a href="">events</a>
+        <a href="exhibitions.html">exhibitions</a>
+        <a href="events.html">events</a>
         <a href="">get involved</a>
-      
-      <form id="search-form">
-        <input type="text" placeholder="Search">
-        <button class="search-btn">Search</button>
-      </form>
       </div>
     </nav>
 
     <!-- HEADER  -->
     <header id="header" class="grid">
-      <div class="bg-img"></div>
       <div class="content-wrap">
         <h1>Welcome</h1>
         <h2>
           To the official opening of <strong>Oslo science museum</strong> the
           29th of February 2020.
         </h2>
-        <a href="#article-section" class="btn">Read More</a>
+        <a href="#article-section" class="btn header-btn">Read More</a>
       </div>
     </header>
 
     <!-- MAIN -->
+
+    <!-- EXHIBITION-SECTION -->
     <main id="main">
-      <section id="exhibition-section" class="grid">
+      <section id="exhibition-section">
+        <div class="ex-title">
+          <h2>some of our exhibitions</h2>
+        </div>
         <ul>
           <li>
             <div class="cards">
-              <img src="/img/photo_5.jpg" alt="" />
+              <img src="img/cosmo.jpg" alt="" class="card-img" />
               <div class="card-content">
-                <h3 class="card-title">Lorem, ipsum.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <h3 class="card-title">Cosmology</h3>
+                <a href="exhibitions.html" class="btn">Read More</a>
               </div>
             </div>
           </li>
           <li>
             <div class="cards">
-              <img src="/img/photo_5.jpg" alt="" />
+              <img src="img/evo.jpg" alt="" class="card-img" />
               <div class="card-content">
-                <h3 class="card-title">Lorem, ipsum.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <h3 class="card-title">evolution</h3>
+                <a href="exhibitions.html" class="btn">Read More</a>
               </div>
             </div>
           </li>
           <li>
             <div class="cards">
-              <img src="/img/photo_5.jpg" alt="" />
+              <img src="img/robo.jpg" alt="" class="card-img" />
               <div class="card-content">
-                <h3 class="card-title">Lorem, ipsum.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <h3 class="card-title">Robotics and AI</h3>
+                <a href="exhibitions.html" class="btn">Read More</a>
               </div>
             </div>
           </li>
         </ul>
       </section>
-
-    
-      <article id="article-section" class="grid">
-        <div class="content-wrap">
-          <h2 class="content-title">Lorem, ipsum.</h2>
+      <!-- ARTICLE-SECTION -->
+      <article id="article-section">
+        <div class="event-header">
+          <h2>Lets explore together!</h2>
+        </div>
+        <div class="article-wrap">
           <div class="text-wrap">
-          <p>
-            Come join us at the Community Science Museum where we’re committed
-            to making science accessible to all.
-          </p>
-          <p>
-            Over the course of human history, science has developed from our
-            early understanding of fire, wind, water, and earth to exploring
-            everything from galaxies far away to the very building blocks of
-            life itself.
-          </p>
-          <p>
-            The aim of our museum is to create a space where everyone can
-            experience the wonders of our discoveries and perhaps even ignite a
-            lifelong passion to continue the exploration of the world around us.
-          </p>
-          <p>
-            We believe science should not be confined to the textbook, but
-            brought to live through exhibits. This is why we have over 1000
-            different exhibits on the many varied subjects of science to
-            explore. Many of these exhibits are designed for you to interact
-            with and play around to see science come to life (apart from the
-            dinosaur exhibits – they only come to life at night when everyone’s
-            gone home).
-            </div>
-          </p>
+            <p>
+              Come join us at the Community Science Museum where we’re committed
+              to making science accessible to all. Over the course of human
+              history, science has developed from our early understanding of
+              fire, wind, water, and earth to exploring everything from galaxies
+              far away to the very building blocks of life itself.
+            </p>
+            <p>
+              The aim of our museum is to create a space where everyone can
+              experience the wonders of our discoveries and perhaps even ignite
+              a lifelong passion to continue the exploration of the world around
+              us.
+            </p>
+            <p>
+              We believe science should not be confined to the textbook, but
+              brought to live through exhibits. This is why we have over 1000
+              different exhibits on the many varied subjects of science to
+              explore. Many of these exhibits are designed for you to interact
+              with and play around to see science come to life (apart from the
+              dinosaur exhibits – they only come to life at night when
+              everyone’s gone home).
+            </p>
+          </div>
         </div>
       </article>
-        <section id="event-section" class="grid">
-        <div class="content-wrap">
-          <h2 class="content-title">Upcoming events</h2>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae,
-            culpa!
-          </p>
+      <!-- INFO SECTION -->
+      <section id="info-section">
+        <div class="icon-card-parent">
+          <div class="icon-wrap">
+            <a href="visit.html"><i class="fab fa-accessible-icon"></i></a>
+          </div>
+          <div class="icon-text-wrap">
+            <h4>accessibility</h4>
+            <p>The museum has wheelchair accessibility ramps.</p>
+          </div>
+        </div>
+        <div class="icon-card-parent">
+          <div class="icon-wrap">
+            <i class="fas fa-mug-hot"></i>
+          </div>
+          <div class="icon-text-wrap">
+            <h4>food and drinks</h4>
+            <p>We serve delicious food and beverages!</p>
+          </div>
+        </div>
+        <div class="icon-card-parent">
+          <div class="icon-wrap">
+            <i class="fas fa-user-graduate"></i>
+          </div>
+          <div class="icon-text-wrap">
+            <h4>learning</h4>
+            <p>We have a learning guarantee!</p>
+          </div>
+        </div>
+        <div class="icon-card-parent">
+          <div class="icon-wrap">
+            <i class="fas fa-map-pin"></i>
+          </div>
+          <div class="icon-text-wrap">
+            <h4>find us</h4>
+            <p>Click on the pin and see the map!</p>
+          </div>
+        </div>
+        <div class="icon-card-parent">
+          <div class="icon-wrap">
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+          <div class="icon-text-wrap">
+            <h4>museum shop</h4>
+            <p>Our shop offers memorabilia, gifts and more!</p>
+          </div>
+        </div>
+        <div class="icon-card-parent">
+          <div class="icon-wrap">
+            <i class="fas fa-bus"></i>
+          </div>
+          <div class="icon-text-wrap">
+            <h4>busstop right outside</h4>
+            <p>Go off at birkelunden busstop and turn around!</p>
+          </div>
         </div>
       </section>
-      <section id="info-section" class="grid">
-        <div class="content-wrap">
-          <h2 class="content-title">opening hours</h2>
-          <ul>
-            <li>Monday: Closed</li>
-            <li>Tuesday: 10:00 – 16:00</li>
-            <li>Wednesday: 10:00 – 16:00</li>
-            <li>Thursday: 10:00 – 16:00</li>
-            <li>Friday: 10:00 – 19:00</li>
-            <li>Saturday: 9:00 – 16:00</li>
-            <li>sunday: 9:00 - 13:00</li>
-          </ul>
-        </div>
-      </section>
+      <!-- EVENT-SECTION -->
+      <div class="exhibition-wrap">
+        <section class="exhibition-cards">
+          <div class="event-header">
+            <h2>Upcoming events:</h2>
+          </div>
+          <article class="card">
+            <img src="img/night.jpg" alt="" class="event-img" />
+            <h3>Night in the Museum</h3>
+            <p>
+              Get your family together for an exciting night in the museum as
+              you sleep over beside dinosaurs and science displays. Bring your
+              own sleeping bag and get ready to rough it as we go exploring the
+              wonders of science.
+            </p>
+          </article>
 
-      
-       <section id="mosaic-gallery">
+          <aside class="card">
+            <ul>
+              <div class="event-card-2">
+                <li class="event-dates">15th of March:</li>
+                <li class="event-title">Night in the Museum.</li>
+                <li class="event-dates">7th, 14th and 23rd of June:</li>
+                <li class="event-title">Visiting professor of Aeronautics.</li>
+                <li class="event-dates">From 14th of May -> 2021</li>
+                <li class="event-title">Energetica Exhibition on Loan.</li>
+                <div class="event-btn">
+                  <a href="event.html">Read More about our Events</a>
+                </div>
+                <div class="opening-hrs-wrap">
+                  <h3>opening hours</h3>
+                  <ul>
+                    <li>Monday: Closed</li>
+                    <li>Tuesday: 10:00 – 16:00</li>
+                    <li>Wednesday: 10:00 – 16:00</li>
+                    <li>Thursday: 10:00 – 16:00</li>
+                    <li>Friday: 10:00 – 19:00</li>
+                    <li>Saturday: 9:00 – 16:00</li>
+                    <li>sunday: 9:00 - 13:00</li>
+                  </ul>
+                </div>
+              </div>
+            </ul>
+          </aside>
+
+          <article class="card">
+            <img src="img/wind.jpg" alt="" class="event-img" />
+            <h3>Energetica Exhibition on Loan</h3>
+            <p>
+              On loan from the NEMO Science Museum in Amsterdam, the Energetica
+              exhibition is coming to the Community Science Museum. It’s a
+              series of installations that allow visitors to experience the
+              power of the elements as we harness them. From solar energy
+              powering lighting, to ‘Wind Island’ that shows how turbines are
+              able to use and control wind to create power.
+            </p>
+          </article>
+        </section>
+      </div>
+      <!-- MOSAIC IMG GALLERY -->
+      <section id="mosaic-gallery">
+        <div class="ex-title img-title">
+          <h2>Image gallery from the science museum:</h2>
+        </div>
         <div class="photo-1"><img src="img/photo_1.jpg" alt="" /></div>
         <div class="photo-2"><img src="img/photo_2.jpg" alt="" /></div>
         <div class="photo-3"><img src="img/photo_3.jpg" alt="" /></div>
@@ -155,13 +259,24 @@
         <div class="photo-13"><img src="img/photo_13.jpg" alt="" /></div>
       </section>
     </main>
-
-
-
-    <footer>footer</footer>
-
+    <!-- FOOTER -->
     <footer>
-      <div class="social_container">
+      <div id="back-to-top">
+        <a href="#header">Back to top</a>
+      </div>
+      <div class="newsletter-box">
+        <h3>Subscribe for news and updates <i class="fas fa-envelope"></i></h3>
+
+        <div class="input-box">
+          <input
+            type="text"
+            class="email-box-input"
+            placeholder="Email Address"
+          />
+          <a href="#" class="myButton">Subscribe now</a>
+        </div>
+      </div>
+      <div class="social-container">
         <i class="fab fa-facebook-square"></i>
         <i class="fab fa-instagram"></i>
         <i class="fab fa-twitter-square"></i>

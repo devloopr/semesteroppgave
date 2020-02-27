@@ -1,0 +1,64 @@
+.exhibition-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-image: linear-gradient(
+    to bottom,
+    #ffe175,
+    #e1d273,
+    #c6c372,
+    #aeb371,
+    #98a36f
+  );
+  padding: 2em;
+}
+
+.card {
+  flex: 0 1 90%;
+  margin: 0 auto;
+  border: 15px solid var(--darkgrey);
+  margin-bottom: 2em;
+  background: var(--darkgrey);
+  transition: all 0.33s ease-in-out;
+  -webkit-transition: all 0.33s ease-in-out;
+  -moz-transition: all 0.33s ease-in-out;
+  -ms-transition: all 0.33s ease-in-out;
+  -o-transition: all 0.33s ease-in-out;
+
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  text-align: left;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.card h3 {
+  color: var(--yellow);
+}
+
+.card:hover {
+  transform: scale(0.9);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.ex-img-wrap {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.ex-img-wrap img {
+  width: 100%;
+  object-fit: fill;
+}
+
+@media screen and (min-width: 700px) {
+  .card {
+    flex: 0 1 43%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .card {
+    flex: 0 1 32%;
+  }
+}
