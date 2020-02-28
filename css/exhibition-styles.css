@@ -62,3 +62,12 @@
     flex: 0 1 32%;
   }
 }
+
+/* EVENTS */
+
+.event-dates-p {
+  text-align: left;
+  padding-top: 0;
+  font-size: 14px;
+  color: #fff;
+}
