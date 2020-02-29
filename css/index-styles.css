@@ -1,6 +1,6 @@
 /* ARTICLE */
 
-#article-section {
+#article-section-1 {
   background-image: linear-gradient(
     to top,
     #ffe175,
@@ -13,6 +13,7 @@
   padding-bottom: 4em;
   text-align: left;
   width: 100%;
+  text-align: center;
 }
 
 #article-section h2 {
@@ -21,10 +22,10 @@
 
 .article-wrap {
   background: var(--darkgrey);
-  width: 98%;
+  width: 100%;
   margin: 0 auto;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-  padding: 3em;
+  padding: 1em 2em;
 }
 
 .article-wrap h2 {
@@ -33,6 +34,10 @@
 
 .article-wrap p {
   color: #ffffff;
+  max-width: 600px;
+  font-size: 17px;
+  margin: 0 auto;
+  text-align: left;
 }
 
 /* EXHIBITION SECTION */
@@ -96,6 +101,7 @@
   display: flex;
   flex-wrap: wrap;
   background: var(--green);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
 .icon-card-parent {
@@ -122,6 +128,10 @@
 .icon-wrap i {
   font-size: 60px;
   color: var(--darkgrey);
+}
+
+.icon-wrap i:hover {
+  color: var(--orange);
 }
 
 .icon-text-wrap h4 {
@@ -310,6 +320,9 @@
 
   .icon-card-parent {
     flex: 0 1 40%;
+  }
+  .article-wrap {
+    padding: 4em 6em;
   }
 }
 

@@ -3,7 +3,7 @@
   padding: 2em;
   width: 100%;
   flex-direction: column;
-  background: var(--peachy);
+
   justify-content: space-evenly;
   background-image: linear-gradient(
     to bottom,
@@ -31,13 +31,17 @@ h3 {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
+#visit-section-a p {
+  max-width: 600px;
+  margin: 0 auto;
+}
 .visit-card-wrap {
   margin-bottom: 2em;
 }
 
 .visit-card-wrap i {
   font-size: 30px;
-  color: var(--orange);
+  color: var(--green);
 }
 
 .visit-card-wrap li {
@@ -49,10 +53,6 @@ h3 {
   margin: 0 auto;
 }
 
-.visit-img {
-  display: none;
-}
-
 @media screen and (min-width: 1000px) {
   #visit-main {
     flex-direction: row;
@@ -62,10 +62,5 @@ h3 {
   #visit-section-a,
   #visit-section-b {
     width: 45%;
-  }
-
-  .visit-img {
-    display: block;
-    padding: 2em;
   }
 }
