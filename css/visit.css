@@ -58,6 +58,17 @@ iframe {
   text-align: center;
 }
 
+.text-info-wrap {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.text-info-wrap a {
+  color: var(--yellow);
+  text-transform: uppercase;
+}
+
 @media screen and (min-width: 1000px) {
   #visit-main {
     flex-direction: row;
